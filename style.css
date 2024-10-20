@@ -122,7 +122,7 @@ header {
 /* main-section-1 */
 
 .section-1 {
-  height: 727px;
+  /* height: 727px; */
   background-image: url(img/section-1-bg.jpg);
   background-repeat: no-repeat;
   /* background-size: cover; */
@@ -246,14 +246,15 @@ header {
 
 .social-media-nav {
   list-style-type: none;
-  /* width: 815px; */
+  width: 815px;
   background-color: #ebebeb;
-  display: inline-flex;
+  display: flex;
   height: 68px;
   padding-right: 343px;
   gap: 37px;
   position: relative;
-  top: -870px;
+  /* top: -870px; */
+  /* outline: 2px solid red; */
 }
 
 .social-media {
@@ -280,7 +281,8 @@ header {
   width: 11px;
   height: 11px;
   background: #222;
-  transform: translate(7000%, 500%);
+  left: 50%;
+  bottom: -70px;
 }
 
 /* article-content */
@@ -419,19 +421,21 @@ header {
 /* section-2-architectures */
 
 .architectures {
-  width: 90%;
+  width: 120%;
   display: flex;
   gap: 34px;
   margin-top: 190px;
-  margin-left: auto;
-  margin-right: auto;
-  /* outline: 2px solid red; */
+  /* align-self: center; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  transform: translateX(-8%);
+  outline: 2px solid red;
 }
 
 .architecture {
   width: 500px;
   height: 342.3px;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -610,19 +614,20 @@ header {
   margin-left: auto;
   cursor: pointer;
   margin-top: 90px;
+  margin-bottom: 107px;
 }
 
 /* section-4 */
 
 .section-4 {
   background-color: #ebebeb;
-  padding-bottom: 300px;
+  padding-bottom: 100px;
 }
 
 .sponsors {
   display: flex;
   gap: 114px;
-  margin-top: 180px;
+  margin-top: 60px;
   /* outline: 2px solid red; */
   align-items: center;
 }
@@ -645,11 +650,25 @@ header {
 
 /* footer */
 
+footer {
+  position: relative;
+  bottom: 0;
+  /* padding-bottom: -1000px; */
+  height: 433px;
+  background: #ebebeb;
+}
+
 /* footer-nav  */
 
-.footer-s1 {
+.footer-section-nav {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  /* width: 90%; */
   background-color: #3d3d3d;
   outline: 2px solid red;
+  z-index: 0;
+  position: relative;
   /* height: 136px; */
 }
 
@@ -662,12 +681,7 @@ header {
   display: flex;
   gap: 37px;
   width: 580px;
-  margin-left: auto;
-  margin-right: 68px;
-  /* padding-bottom: 200px; */
-  /* margin-bottom: 200px; */
-  /* position: relative; */
-  /* bottom: 100px; */
+  transform: translate(95%, -100%);
   /* outline: 2px solid red; */
 }
 
@@ -688,20 +702,22 @@ header {
 /* subscription section */
 
 .subscription-section {
-  width: 1168px;
+  width: 95%;
   height: 254px;
   margin-left: auto;
   margin-right: auto;
   background-color: #99823d;
-  position: absolute;
-  left: auto;
+  z-index: 2;
+  position: relative;
+  top: -35px;
 }
 
 .subscription-content {
   display: flex;
   gap: 17px;
-  padding-top: 50px;
-  padding-left: 68px;
+  justify-content: center;
+  margin-top: 85px;
+  /* transform: translate(11%, 100%); */
 }
 
 .subscription-input {
@@ -711,7 +727,7 @@ header {
   font-family: 'Open Sans', sans-serif;
   font-size: 11px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 34px;
   letter-spacing: 2.763px;
   text-transform: uppercase;
@@ -719,6 +735,9 @@ header {
   border-radius: 1px;
   outline: none;
   border: none;
+  align-items: center;
+  justify-content: center;
+  /* width: 296px; */
   /* white-space: nowrap; */
 }
 
@@ -736,4 +755,65 @@ header {
   background: #141414;
   border: none;
   border-radius: 1px;
+}
+
+/* footer-bottom-section */
+
+.footer-bottom-section {
+  background: #141414;
+  /* height: 240px; */
+  /* outline: 2px solid red; */
+  position: relative;
+  top: -255px;
+  padding-top: 260px;
+  z-index: 1;
+}
+
+.footer-bottom-nav {
+  display: inline-flex;
+  justify-content: center;
+  gap: 36px;
+  flex-shrink: 0;
+}
+
+.footer-bottom-item {
+  color: #fff;
+  text-align: center;
+  font-family: 'Open Sans';
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 2.763px;
+  text-transform: uppercase;
+}
+
+.footer-text {
+  display: flex;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.footer-text li {
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  font-family: 'Open Sans';
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 2.763px;
+  text-transform: uppercase;
+}
+
+.footer-text li span {
+  color: #fff;
+  text-align: center;
+  font-family: 'Open Sans';
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 2.763px;
+  text-transform: uppercase;
 }
