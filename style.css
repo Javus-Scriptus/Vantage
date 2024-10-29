@@ -661,27 +661,43 @@ footer {
 /* footer-nav  */
 
 .footer-section-nav {
+  /* overflow: hidden; */
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  /* width: 90%; */
+  width: 90%;
+  padding-top: 68px;
   background-color: #3d3d3d;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
   z-index: 0;
   position: relative;
+  z-index: 999;
   /* height: 136px; */
 }
 
 .footer-logo {
-  margin-top: 68px;
-  margin-left: 68px;
+  width: 131px;
+  height: 34px;
+  flex-shrink: 0;
+}
+
+.footer-nav-content {
+  display: flex;
+  gap: 37px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  /* width: 745px; */
+  align-items: center;
+  /* transform: translate(95%, -100%); */
+  outline: 2px solid red;
 }
 
 .footer-nav {
   display: flex;
   gap: 37px;
   width: 580px;
-  transform: translate(95%, -100%);
+  align-items: center;
   /* outline: 2px solid red; */
 }
 
@@ -702,10 +718,11 @@ footer {
 /* subscription section */
 
 .subscription-section {
-  width: 95%;
+  width: 80%;
   height: 254px;
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
   background-color: #99823d;
   z-index: 2;
   position: relative;
@@ -715,8 +732,10 @@ footer {
 .subscription-content {
   display: flex;
   gap: 17px;
+  align-self: center;
   justify-content: center;
-  margin-top: 85px;
+  /* margin-top: 85px; */
+  padding-top: 85px;
   /* transform: translate(11%, 100%); */
 }
 
