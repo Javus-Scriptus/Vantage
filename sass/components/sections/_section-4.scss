@@ -1,0 +1,28 @@
+.section-4 {
+  background-color: #ebebeb;
+  padding-bottom: 100px;
+}
+
+.sponsors {
+  display: flex;
+  gap: 114px;
+  margin-top: 60px;
+  /* outline: 2px solid red; */
+  align-items: center;
+}
+
+.sponsor {
+  position: relative;
+}
+
+.sponsor::before {
+  content: '';
+  list-style-type: square;
+  position: absolute;
+  top: 15px;
+  left: -60px;
+  background-color: #99823d;
+  width: 9px;
+  height: 9px;
+  /* outline: 2px solid red; */
+}

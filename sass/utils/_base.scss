@@ -1,0 +1,46 @@
+/* font-family: "Open Sans", sans-serif; */
+/* font-family: "Teko", sans-serif; */
+
+/* general selectors */
+
+:root {
+  --regular-black: #000000;
+  --regular-white: #ffffff;
+  --heading-black: #141414;
+  --text-golden: #99823d;
+  --icon-golden: #a68f4b;
+  --icon-red: #e63946;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
+  outline: 2px solid red;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  // overflow: hidden;
+  // flex-direction: column;
+  flex-wrap: wrap;
+  width: 1176px;
+  outline: 2px solid red;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
