@@ -84,11 +84,7 @@
   }
 
   .studio-text {
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 25.5px;
-    color: #141414;
-    font-family: 'Open Sans', sans-serif;
+    @extend %regular-text;
   }
 
   .studio-buttons {

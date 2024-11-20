@@ -45,13 +45,7 @@
 }
 
 .article-text-small {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 25.5px;
-  color: #141414;
-  margin-top: 32px;
-  margin-bottom: 16px;
+  @extend %regular-text;
 }
 
 .article-text-large {
