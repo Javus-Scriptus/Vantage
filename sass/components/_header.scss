@@ -1,7 +1,6 @@
 header {
   background-color: #000000;
-  text-align: center;
-  align-items: center;
+ @extend %standart-center;
 
   .header-logo {
     margin-right: auto;
@@ -56,14 +55,7 @@ header {
     align-items: center;
 
     a {
-      color: #ffffff;
-      line-height: 34px;
-      letter-spacing: 2.76px;
-      font-size: 11px;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 400;
-      text-decoration: none;
-      text-transform: uppercase;
+      @extend %text-link;
     }
   }
 }

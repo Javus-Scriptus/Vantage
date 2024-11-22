@@ -45,6 +45,17 @@ a {
   color: black;
 }
 
+header {
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .article-text-small, .section-1 .studio-text {
   font-size: 17px;
   font-weight: 400;
@@ -53,12 +64,19 @@ a {
   font-family: "Open Sans", sans-serif;
 }
 
+.section-1 .social-media, header .header-nav a {
+  color: #ffffff;
+  line-height: 34px;
+  letter-spacing: 2.76px;
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 header {
   background-color: #000000;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 header .header-logo {
   margin-right: auto;
@@ -113,17 +131,6 @@ header .header-nav {
   list-style-type: none;
   align-items: center;
 }
-header .header-nav a {
-  color: #ffffff;
-  line-height: 34px;
-  letter-spacing: 2.76px;
-  font-size: 11px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
 .section-1 {
   /* height: 727px; */
   background-image: url(img/section-1-bg.jpg);
@@ -238,13 +245,8 @@ header .header-nav a {
   /* outline: 2px solid red; */
 }
 .section-1 .social-media {
-  font-size: 12px;
-  font-weight: 500;
   line-height: 68px;
   letter-spacing: 2.97px;
-  color: #000000;
-  font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
 }
 
 .section-2 {

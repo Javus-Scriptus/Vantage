@@ -136,12 +136,8 @@
   }
 
   .social-media {
-    font-size: 12px;
-    font-weight: 500;
+    @extend %text-link;
     line-height: 68px;
     letter-spacing: 2.97px;
-    color: #000000;
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
   }
 }
